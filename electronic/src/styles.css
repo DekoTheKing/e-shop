@@ -1,0 +1,199 @@
+/* styles.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.home-page {
+  background-image: url('https://img.freepik.com/premium-vector/consumer-electronics-store-interior-showcase-shelves-with-laptop-computer_276875-601.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: auto;
+  height: 1000px;
+  margin-top: 0%;
+}
+
+/*styles for the header and nav bar*/
+.header {
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/012/979/489/small/abstact-red-line-banner-overlap-layers-on-black-background-with-free-space-for-your-design-modern-header-vector.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 20px;
+  height: 100px;
+  font-size: large;
+  border-style: solid;
+  border-color: black;
+  border-bottom-width: 10px;
+}
+
+nav {
+  
+  text-align: center;
+  padding: 10px;
+}
+
+.header > h1
+{
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.welcome {
+  text-align: center;
+  padding: 20px;
+}
+
+.welcome-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* style for footer */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+}
+
+/* style for the products list */
+
+.products {
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-item {
+  margin: 10px;
+  text-align: center;
+}
+
+.product-item img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+  border-radius: 8px; /* Optional: Add a border radius for rounded corners */
+}
+
+/* styles for Cart items */
+
+.cart {
+  background-color: #f8d7da; /* Light red background color */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  max-width: 400px; /* Adjust the max-width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.cart-items {
+  margin-bottom: 10px;
+}
+
+.cart-items p {
+  margin: 0;
+}
+
+.cart button {
+  background-color: #d9534f; /* Red button color */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart button:hover {
+  background-color: #c9302c; /* Darker red color on hover */
+}
+
+.buy-button {
+  background-color: #5bde6d; /* Green button color */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: #46b8da; /* Darker green color on hover */
+}
+
+/*style for the AboutUS */
+
+.about-us {
+  color: black;
+  background-color: black;
+  color:white;
+  height: 753px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.about-us h2 {
+  color: red;
+  border-bottom: 2px solid red;
+  padding-bottom: 5px;
+}
+
+.about-us p {
+  margin-bottom: 15px;
+}
+
+.about-us h3 {
+  color: red;
+  margin-top: 20px;
+}
+
+/*styles for the footer*/
+
+.footer {
+  background-color: transparent;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff; /* Set the color to white */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer i {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
