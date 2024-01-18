@@ -84,6 +84,9 @@ nav a {
 
 .products {
   text-align: center;
+  background-color: #000000;
+  color: white;
+  margin-top: -20px;
 }
 
 .product-list {
@@ -104,50 +107,8 @@ nav a {
   object-fit: cover; /* Maintain aspect ratio and cover container */
   border-radius: 8px; /* Optional: Add a border radius for rounded corners */
 }
-
-/* styles for Cart items */
-
-.cart {
-  background-color: #f8d7da; /* Light red background color */
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px;
-  max-width: 400px; /* Adjust the max-width as needed */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-}
-
-.cart-items {
-  margin-bottom: 10px;
-}
-
-.cart-items p {
-  margin: 0;
-}
-
-.cart button {
-  background-color: #d9534f; /* Red button color */
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.cart button:hover {
-  background-color: #c9302c; /* Darker red color on hover */
-}
-
-.buy-button {
-  background-color: #5bde6d; /* Green button color */
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.buy-button:hover {
-  background-color: #46b8da; /* Darker green color on hover */
+div.product-item > button{
+  width: 100px;
 }
 
 /*style for the AboutUS */
@@ -194,6 +155,105 @@ nav a {
 .footer i {
   font-size: 24px;
   margin-right: 5px;
+}
+/*styles for the login*/
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4caf50; /* Green color */
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green color on hover */
+}
+/*styles for the cart*/
+
+.cart-item {
+  display: flex;
+  align-items: center;
+}
+
+.cart-items p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   margin: 0;
+  padding: 10px; /* Adjust this for spacing between items */
+}
+
+/* Style the remove button */
+.cart-items button {
+  background-color: #ffffff; /* White background for the button */
+  color: rgb(0, 0, 0); /* Red text color for the button */
+  border: none;
+  padding: 5px; /* Adjust padding for a smaller button */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition */
+  /* Position the button on the right side */
+  width: 100%; /* Stretch the cart items to the full width */
+  /*display: flex;*/
+  justify-content: space-between; /* Adjust this to control spacing between products */
+  margin-left: 100px;
+
+}
+
+/* Change button color on hover */
+.cart-items button:hover {
+  background-color: #f73434; /* Light red on hover */
+  
+}
+
+/* Style the Buy button */
+.cart {
+  background-color: #000000; /* Red color for the cart background */
+  color: #ffffff; /* White text color */
+  padding: 30px; /* Increase padding for a larger cart */
+  width: 100%; /* Make the cart take up the entire width of the screen */
+  height: 100vh; /* Make the cart take up the entire height of the screen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Change button color on hover */
+.cart a button:hover {
+  background-color: #1e501e; /* Darker green on hover */
+}
+
+.cart > a:nth-child(4) > button:nth-child(1)
+{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+
+}
+.cart-items > div > p > button{
+  width: 15%;
 }
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');

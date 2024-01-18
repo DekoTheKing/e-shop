@@ -1,8 +1,9 @@
 // Products.js
 import React from 'react';
+//import React, { useState } from 'react';
 import './styles.css';
 
-function Products({ setCart }) {
+function Products({ addToCartCallback }) {
   const products = [
     { id: 1, name: 'iPhone 15 Pro Max', price: 999.99, image: 'https://www.jbhifi.com.au/cdn/shop/products/639220-Product-0-I-638301469804214552.jpg?v=1698811959' },
     { id: 2, name: 'Laptop ThinkPad T15', price: 499.99, image: 'https://5.imimg.com/data5/AY/DP/MY-11673038/lenovo-laptop.png' },
@@ -14,7 +15,9 @@ function Products({ setCart }) {
   ];
 
   const addToCart = (product) => {
-    setCart(prevCart => [...prevCart, product]);
+    addToCartCallback(product);
+    // Add a pop-up window saying "Item added to cart" here
+    alert(`${product.name} added to cart`);
   };
 
   return (

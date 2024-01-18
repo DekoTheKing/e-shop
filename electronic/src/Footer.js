@@ -13,7 +13,7 @@ const Footer = () => {
         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-instagram"></i>
         </a>
-        <a href="mailto:your@email.com">
+        <a href="mailto:serafimovskidejan@gmail.com">
           <i className="fas fa-envelope"></i>
         </a>
       </div>

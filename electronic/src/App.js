@@ -11,7 +11,15 @@ import Login from './Login';
 import './styles.css';
 
 function App() {
-  const [cart, setCart] = useState([]); // Initialize cart state here
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (product) => {
+    setCart(prevCart => [...prevCart, product]);
+  };
+
+  const removeFromCart = (productId) => {
+    setCart(prevCart => prevCart.filter(item => item.id !== productId));
+  };
 
   return (
     <Router>
@@ -19,9 +27,9 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products setCart={setCart} />} />
+          <Route path="/products" element={<Products addToCartCallback={addToCart} />} />
           <Route path="/about" element={<AboutUs />} />
-          <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
+          <Route path="/cart" element={<Cart cart={cart} removeFromCartCallback={removeFromCart} />} />
           <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
