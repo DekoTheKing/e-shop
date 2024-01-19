@@ -8,6 +8,7 @@ import AboutUs from './AboutUs';
 import Cart from './Cart';
 import Footer from './Footer';
 import Login from './Login';
+import SignIn from './SignIn';
 import './styles.css';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/cart" element={<Cart cart={cart} removeFromCartCallback={removeFromCart} />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signin" element={<SignIn />} />
         </Routes>
         <Footer />
       </div>

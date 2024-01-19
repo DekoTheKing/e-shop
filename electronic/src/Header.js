@@ -13,6 +13,7 @@ function Header() {
           <li><Link to="/about">About Us</Link></li>
           <li><Link to="/cart">Cart</Link></li>
           <li><Link to="/login">Login</Link></li>
+          <li><Link to="/signin">Sign In</Link></li>
         </ul>
       </nav>
       <h1>Welcome to our Electronic Store</h1>

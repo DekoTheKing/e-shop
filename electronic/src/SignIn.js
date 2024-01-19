@@ -1,30 +1,31 @@
-// Login.js
-
+// SignIn.js
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; // Updated import
 import './styles.css';
 
-function Login() {
-  const [username, setUsername] = useState('');
+function SignIn() {
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate(); // Updated hook
 
-  const handleLogin = () => {
+  const handleSignIn = () => {
     // In a real application, you would perform authentication here
     // For now, let's just display a success message
-    alert(`Successfully logged in as ${username}`);
+    alert(`Successfully signed in with email: ${email}`);
+    navigate('/');
   };
 
   return (
     <div className="login-container">
-      <h2>Login Page</h2>
-      <form className="login-form">
+      <h2>Sign In Page</h2>
+      <form>
         <div className="form-group">
-          <label htmlFor="username">Username:</label>
+          <label htmlFor="email">Email:</label>
           <input
             type="text"
-            id="username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
 
@@ -38,16 +39,12 @@ function Login() {
           />
         </div>
 
-        <button type="button" onClick={handleLogin}>
-          Log In
+        <button type="button" onClick={handleSignIn}>
+          Sign In
         </button>
-
-        <p>
-          Don't have an account? <Link to="/signin">Sign Up</Link>
-        </p>
       </form>
     </div>
   );
 }
 
-export default Login;
+export default SignIn;
