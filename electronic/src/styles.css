@@ -141,13 +141,13 @@ div.product-item > button{
 
 .footer {
   background-color: transparent;
-  color: #fff;
+  color: red;
   padding: 20px;
   text-align: center;
 }
 
 .footer a {
-  color: #fff; /* Set the color to white */
+  color: red; /* Set the color to white */
   text-decoration: none;
   margin: 0 10px;
 }
@@ -189,7 +189,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049; /* Darker green color on hover */
+  background-color: #215724; /* Darker green color on hover */
 }
 /*styles for the cart*/
 
@@ -293,8 +293,62 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #1e501e;
 }
 
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem; /* Add padding for better spacing */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px; /* Add margin for better spacing between links */
+}
+
+.login-buttons {
+  text-align: right;
+}
+
+.login-buttons a {
+  color: white; /* Set text color to white */
+  text-decoration: none; /* Remove underline */
+  margin-left: 0px; /* Add margin to separate the buttons */
+  padding-right: 60px;
+}
+
+.login-buttons a:hover {
+  text-decoration: underline; /* Add underline on hover if needed */
+  
+}
+
+.header > nav > ul > li > a:hover{
+  background-color:red;
+}
+.login-container {
+  background-color: black; /* Set the background color to black */
+  padding: 20px; /* Add padding for better visual appearance */
+  border-radius: 10px; /* Add rounded corners if desired */
+  color: white; /* Set text color to white */
+}
+
+#root > div{
+  background-color: #000000;
+  height: 920px;
+}
+
+#root > div > div.login-container > form > p > a{
+  color: red;
+}
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
