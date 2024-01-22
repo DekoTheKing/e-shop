@@ -19,17 +19,12 @@ This project is a comprehensive e-Commerce application for an electronics store,
    - Dynamically updates the cart contents.
    - Provides the option to remove items from the cart.
 
-4. **Checkout Process:**
-   - Enables users to proceed to checkout with the items in their cart.
-   - Collects user information for shipping and payment.
-   - Provides a confirmation screen before finalizing the order.
-
-5. **User Authentication:**
+4. **User Authentication:**
    - Users can create accounts or log in securely.
    - Ensures a personalized shopping experience.
    - Enhances security for sensitive information.
 
-6. **Login and Sign In:**
+5. **Login and Sign In:**
    - Separated login and sign-in functionality.
    - Users can log in with their credentials.
    - New users can create accounts securely.
