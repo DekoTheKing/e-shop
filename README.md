@@ -2,7 +2,7 @@
 
 ## Electronics Store with Shopping Cart, Catalog, and Checkout
 
-This project is a comprehensive e-Commerce application for an electronics store, featuring essential functionalities such as a shopping cart, product catalog, user authentication, and a seamless checkout process.
+This project is a comprehensive e-Commerce application for an electronics store, featuring essential functionalities such as a shopping cart, product catalog and user authentication.
 
 ### Features:
 
